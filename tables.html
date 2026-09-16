@@ -1,0 +1,764 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Tables | Restaurant Management System</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="app">
+      <!-- SIDEBAR -->
+
+      <aside class="sidebar">
+        <div class="mobile-sidebar-header">
+          <div class="mobile-logo">
+            <h1>RESTAURANT</h1>
+            <p>Management System</p>
+          </div>
+
+          <button
+            type="button"
+            class="menu-button"
+            id="menuButton"
+            aria-label="Open navigation menu"
+            aria-expanded="false"
+          >
+            ☰
+          </button>
+        </div>
+
+        <div class="logo desktop-logo">
+          <h1>RESTAURANT</h1>
+          <p>Management System</p>
+        </div>
+
+        <nav class="sidebar-nav">
+          <ul>
+            <li>
+              <a href="index.html">
+                <span>▣</span>
+                Dashboard
+              </a>
+            </li>
+
+            <li>
+              <a href="orders.html">
+                <span>▤</span>
+                Orders
+              </a>
+            </li>
+
+            <li class="active">
+              <a href="tables.html">
+                <span>□</span>
+                Tables
+              </a>
+            </li>
+
+            <li>
+              <a href="menu.html">
+                <span>☷</span>
+                Menu
+              </a>
+            </li>
+
+            <li>
+              <a href="inventory.html">
+                <span>▥</span>
+                Inventory
+              </a>
+            </li>
+
+            <li>
+              <a href="staff.html">
+                <span>♙</span>
+                Staff
+              </a>
+            </li>
+
+            <li>
+              <a href="payments.html">
+                <span>₦</span>
+                Payments
+              </a>
+            </li>
+
+            <li>
+              <a href="reports.html">
+                <span>▥</span>
+                Reports
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="sidebar-bottom">
+          <a href="settings.html">
+            <span>⚙</span>
+            Settings
+          </a>
+
+          <a href="#">
+            <span>↪</span>
+            Logout
+          </a>
+        </div>
+      </aside>
+
+      <!-- MAIN CONTENT -->
+
+      <main class="main-content">
+        <!-- HEADER -->
+
+        <header class="top-header">
+          <div class="header-title">
+            <h2>Tables</h2>
+
+            <p>View and manage the restaurant's table status.</p>
+          </div>
+
+          <div class="header-right">
+            <button type="button" class="notification-button">🔔</button>
+
+            <div class="admin-profile">
+              <div class="admin-avatar">A</div>
+
+              <div>
+                <h4>Paul</h4>
+
+                <p>Administrator</p>
+              </div>
+            </div>
+          </div>
+        </header>
+
+        <!-- TABLE SUMMARY -->
+
+        <section class="table-summary">
+          <div class="table-summary-card">
+            <span> All Tables </span>
+
+            <strong> 36 </strong>
+          </div>
+
+          <div class="table-summary-card">
+            <span> Occupied </span>
+
+            <strong> 24 </strong>
+          </div>
+
+          <div class="table-summary-card">
+            <span> Available </span>
+
+            <strong> 8 </strong>
+          </div>
+
+          <div class="table-summary-card">
+            <span> Reserved </span>
+
+            <strong> 4 </strong>
+          </div>
+        </section>
+
+        <!-- TABLE LIST -->
+
+        <section class="tables-page">
+          <div class="section-header">
+            <div>
+              <h2>All Tables</h2>
+
+              <p>Monitor the current status of all 36 tables.</p>
+            </div>
+          </div>
+
+          <!-- TABLE GRID -->
+
+          <div class="tables-management-grid">
+            <div class="management-table-card occupied">
+              <div class="management-table-top">
+                <div>
+                  <span>Table</span>
+                  <strong>01</strong>
+                </div>
+
+                <span class="management-table-status"> Occupied </span>
+              </div>
+
+              <div class="management-table-info">
+                <p>4 seats</p>
+                <p>Order #1168</p>
+              </div>
+            </div>
+
+            <div class="management-table-card occupied">
+              <div class="management-table-top">
+                <div>
+                  <span>Table</span>
+                  <strong>02</strong>
+                </div>
+
+                <span class="management-table-status"> Occupied </span>
+              </div>
+
+              <div class="management-table-info">
+                <p>4 seats</p>
+                <p>Order #1172</p>
+              </div>
+            </div>
+
+            <div class="management-table-card available">
+              <div class="management-table-top">
+                <div>
+                  <span>Table</span>
+                  <strong>03</strong>
+                </div>
+
+                <span class="management-table-status"> Available </span>
+              </div>
+
+              <div class="management-table-info">
+                <p>2 seats</p>
+                <p>No current order</p>
+              </div>
+            </div>
+
+            <div class="management-table-card reserved">
+              <div class="management-table-top">
+                <div>
+                  <span>Table</span>
+                  <strong>04</strong>
+                </div>
+
+                <span class="management-table-status"> Reserved </span>
+              </div>
+
+              <div class="management-table-info">
+                <p>4 seats</p>
+                <p>Reserved for 7:00 PM</p>
+              </div>
+            </div>
+
+            <div class="management-table-card occupied">
+              <div class="management-table-top">
+                <div>
+                  <span>Table</span>
+                  <strong>05</strong>
+                </div>
+
+                <span class="management-table-status"> Occupied </span>
+              </div>
+
+              <div class="management-table-info">
+                <p>6 seats</p>
+                <p>Order #1170</p>
+              </div>
+            </div>
+
+            <div class="management-table-card occupied">
+              <div class="management-table-top">
+                <div>
+                  <span>Table</span>
+                  <strong>06</strong>
+                </div>
+
+                <span class="management-table-status"> Occupied </span>
+              </div>
+
+              <div class="management-table-info">
+                <p>4 seats</p>
+                <p>Order #1174</p>
+              </div>
+            </div>
+
+            <div class="management-table-card available">
+              <div class="management-table-top">
+                <div>
+                  <span>Table</span>
+                  <strong>07</strong>
+                </div>
+
+                <span class="management-table-status"> Available </span>
+              </div>
+
+              <div class="management-table-info">
+                <p>2 seats</p>
+                <p>No current order</p>
+              </div>
+            </div>
+
+            <div class="management-table-card occupied">
+              <div class="management-table-top">
+                <div>
+                  <span>Table</span>
+                  <strong>08</strong>
+                </div>
+
+                <span class="management-table-status"> Occupied </span>
+              </div>
+
+              <div class="management-table-info">
+                <p>4 seats</p>
+                <p>Order #1184</p>
+              </div>
+            </div>
+
+            <div class="management-table-card occupied">
+              <div class="management-table-top">
+                <div>
+                  <span>Table</span>
+                  <strong>09</strong>
+                </div>
+
+                <span class="management-table-status"> Occupied </span>
+              </div>
+
+              <div class="management-table-info">
+                <p>6 seats</p>
+                <p>Order #1159</p>
+              </div>
+            </div>
+
+            <div class="management-table-card reserved">
+              <div class="management-table-top">
+                <div>
+                  <span>Table</span>
+                  <strong>10</strong>
+                </div>
+
+                <span class="management-table-status"> Reserved </span>
+              </div>
+
+              <div class="management-table-info">
+                <p>4 seats</p>
+                <p>Reserved for 8:30 PM</p>
+              </div>
+            </div>
+
+            <div class="management-table-card occupied">
+              <div class="management-table-top">
+                <div>
+                  <span>Table</span>
+                  <strong>11</strong>
+                </div>
+
+                <span class="management-table-status"> Occupied </span>
+              </div>
+
+              <div class="management-table-info">
+                <p>4 seats</p>
+                <p>Order #1176</p>
+              </div>
+            </div>
+
+            <div class="management-table-card available">
+              <div class="management-table-top">
+                <div>
+                  <span>Table</span>
+                  <strong>12</strong>
+                </div>
+
+                <span class="management-table-status"> Available </span>
+              </div>
+
+              <div class="management-table-info">
+                <p>2 seats</p>
+                <p>No current order</p>
+              </div>
+            </div>
+
+            <div class="management-table-card occupied">
+              <div class="management-table-top">
+                <div>
+                  <span>Table</span>
+                  <strong>13</strong>
+                </div>
+
+                <span class="management-table-status"> Occupied </span>
+              </div>
+
+              <div class="management-table-info">
+                <p>6 seats</p>
+                <p>Order #1165</p>
+              </div>
+            </div>
+
+            <div class="management-table-card occupied">
+              <div class="management-table-top">
+                <div>
+                  <span>Table</span>
+                  <strong>14</strong>
+                </div>
+
+                <span class="management-table-status"> Occupied </span>
+              </div>
+
+              <div class="management-table-info">
+                <p>6 seats</p>
+                <p>Order #1186</p>
+              </div>
+            </div>
+
+            <div class="management-table-card available">
+              <div class="management-table-top">
+                <div>
+                  <span>Table</span>
+                  <strong>15</strong>
+                </div>
+
+                <span class="management-table-status"> Available </span>
+              </div>
+
+              <div class="management-table-info">
+                <p>4 seats</p>
+                <p>No current order</p>
+              </div>
+            </div>
+
+            <div class="management-table-card occupied">
+              <div class="management-table-top">
+                <div>
+                  <span>Table</span>
+                  <strong>16</strong>
+                </div>
+
+                <span class="management-table-status"> Occupied </span>
+              </div>
+
+              <div class="management-table-info">
+                <p>8 seats</p>
+                <p>Order #1162</p>
+              </div>
+            </div>
+
+            <div class="management-table-card occupied">
+              <div class="management-table-top">
+                <div>
+                  <span>Table</span>
+                  <strong>17</strong>
+                </div>
+
+                <span class="management-table-status"> Occupied </span>
+              </div>
+
+              <div class="management-table-info">
+                <p>4 seats</p>
+                <p>Order #1178</p>
+              </div>
+            </div>
+
+            <div class="management-table-card reserved">
+              <div class="management-table-top">
+                <div>
+                  <span>Table</span>
+                  <strong>18</strong>
+                </div>
+
+                <span class="management-table-status"> Reserved </span>
+              </div>
+
+              <div class="management-table-info">
+                <p>6 seats</p>
+                <p>Reserved for 9:00 PM</p>
+              </div>
+            </div>
+
+            <div class="management-table-card occupied">
+              <div class="management-table-top">
+                <div>
+                  <span>Table</span>
+                  <strong>19</strong>
+                </div>
+
+                <span class="management-table-status"> Occupied </span>
+              </div>
+
+              <div class="management-table-info">
+                <p>4 seats</p>
+                <p>Order #1154</p>
+              </div>
+            </div>
+
+            <div class="management-table-card available">
+              <div class="management-table-top">
+                <div>
+                  <span>Table</span>
+                  <strong>20</strong>
+                </div>
+
+                <span class="management-table-status"> Available </span>
+              </div>
+
+              <div class="management-table-info">
+                <p>2 seats</p>
+                <p>No current order</p>
+              </div>
+            </div>
+
+            <div class="management-table-card occupied">
+              <div class="management-table-top">
+                <div>
+                  <span>Table</span>
+                  <strong>21</strong>
+                </div>
+
+                <span class="management-table-status"> Occupied </span>
+              </div>
+
+              <div class="management-table-info">
+                <p>4 seats</p>
+                <p>Order #1182</p>
+              </div>
+            </div>
+
+            <div class="management-table-card occupied">
+              <div class="management-table-top">
+                <div>
+                  <span>Table</span>
+                  <strong>22</strong>
+                </div>
+
+                <span class="management-table-status"> Occupied </span>
+              </div>
+
+              <div class="management-table-info">
+                <p>6 seats</p>
+                <p>Order #1169</p>
+              </div>
+            </div>
+
+            <div class="management-table-card available">
+              <div class="management-table-top">
+                <div>
+                  <span>Table</span>
+                  <strong>23</strong>
+                </div>
+
+                <span class="management-table-status"> Available </span>
+              </div>
+
+              <div class="management-table-info">
+                <p>4 seats</p>
+                <p>No current order</p>
+              </div>
+            </div>
+
+            <div class="management-table-card occupied">
+              <div class="management-table-top">
+                <div>
+                  <span>Table</span>
+                  <strong>24</strong>
+                </div>
+
+                <span class="management-table-status"> Occupied </span>
+              </div>
+
+              <div class="management-table-info">
+                <p>8 seats</p>
+                <p>Order #1158</p>
+              </div>
+            </div>
+
+            <div class="management-table-card occupied">
+              <div class="management-table-top">
+                <div>
+                  <span>Table</span>
+                  <strong>25</strong>
+                </div>
+
+                <span class="management-table-status"> Occupied </span>
+              </div>
+
+              <div class="management-table-info">
+                <p>4 seats</p>
+                <p>Order #1171</p>
+              </div>
+            </div>
+
+            <div class="management-table-card reserved">
+              <div class="management-table-top">
+                <div>
+                  <span>Table</span>
+                  <strong>26</strong>
+                </div>
+
+                <span class="management-table-status"> Reserved </span>
+              </div>
+
+              <div class="management-table-info">
+                <p>4 seats</p>
+                <p>Reserved for 7:30 PM</p>
+              </div>
+            </div>
+
+            <div class="management-table-card occupied">
+              <div class="management-table-top">
+                <div>
+                  <span>Table</span>
+                  <strong>27</strong>
+                </div>
+
+                <span class="management-table-status"> Occupied </span>
+              </div>
+
+              <div class="management-table-info">
+                <p>8 seats</p>
+                <p>Order #1179</p>
+              </div>
+            </div>
+
+            <div class="management-table-card available">
+              <div class="management-table-top">
+                <div>
+                  <span>Table</span>
+                  <strong>28</strong>
+                </div>
+
+                <span class="management-table-status"> Available </span>
+              </div>
+
+              <div class="management-table-info">
+                <p>2 seats</p>
+                <p>No current order</p>
+              </div>
+            </div>
+
+            <div class="management-table-card occupied">
+              <div class="management-table-top">
+                <div>
+                  <span>Table</span>
+                  <strong>29</strong>
+                </div>
+
+                <span class="management-table-status"> Occupied </span>
+              </div>
+
+              <div class="management-table-info">
+                <p>6 seats</p>
+                <p>Order #1161</p>
+              </div>
+            </div>
+
+            <div class="management-table-card occupied">
+              <div class="management-table-top">
+                <div>
+                  <span>Table</span>
+                  <strong>30</strong>
+                </div>
+
+                <span class="management-table-status"> Occupied </span>
+              </div>
+
+              <div class="management-table-info">
+                <p>4 seats</p>
+                <p>Order #1167</p>
+              </div>
+            </div>
+
+            <div class="management-table-card available">
+              <div class="management-table-top">
+                <div>
+                  <span>Table</span>
+                  <strong>31</strong>
+                </div>
+
+                <span class="management-table-status"> Available </span>
+              </div>
+
+              <div class="management-table-info">
+                <p>4 seats</p>
+                <p>No current order</p>
+              </div>
+            </div>
+
+            <div class="management-table-card occupied">
+              <div class="management-table-top">
+                <div>
+                  <span>Table</span>
+                  <strong>32</strong>
+                </div>
+
+                <span class="management-table-status"> Occupied </span>
+              </div>
+
+              <div class="management-table-info">
+                <p>6 seats</p>
+                <p>Order #1175</p>
+              </div>
+            </div>
+
+            <div class="management-table-card reserved">
+              <div class="management-table-top">
+                <div>
+                  <span>Table</span>
+                  <strong>33</strong>
+                </div>
+
+                <span class="management-table-status"> Reserved </span>
+              </div>
+
+              <div class="management-table-info">
+                <p>4 seats</p>
+                <p>Reserved for 8:00 PM</p>
+              </div>
+            </div>
+
+            <div class="management-table-card occupied">
+              <div class="management-table-top">
+                <div>
+                  <span>Table</span>
+                  <strong>34</strong>
+                </div>
+
+                <span class="management-table-status"> Occupied </span>
+              </div>
+
+              <div class="management-table-info">
+                <p>8 seats</p>
+                <p>Order #1156</p>
+              </div>
+            </div>
+
+            <div class="management-table-card available">
+              <div class="management-table-top">
+                <div>
+                  <span>Table</span>
+                  <strong>35</strong>
+                </div>
+
+                <span class="management-table-status"> Available </span>
+              </div>
+
+              <div class="management-table-info">
+                <p>4 seats</p>
+                <p>No current order</p>
+              </div>
+            </div>
+
+            <div class="management-table-card occupied">
+              <div class="management-table-top">
+                <div>
+                  <span>Table</span>
+                  <strong>36</strong>
+                </div>
+
+                <span class="management-table-status"> Occupied </span>
+              </div>
+
+              <div class="management-table-info">
+                <p>6 seats</p>
+                <p>Order #1164</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
